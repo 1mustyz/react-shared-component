@@ -1,6 +1,6 @@
 import "./App.css";
-import Button from "Forms/Button";
-import Avatar from "index/Avatar";
+import Button from "./Forms/Button";
+import Avatar from "./index/Avatar";
 
 function App() {
   return (

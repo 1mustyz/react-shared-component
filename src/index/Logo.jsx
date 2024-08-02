@@ -1,6 +1,6 @@
 /* eslint-disable no-unneeded-ternary */
 import logo from "Assets/logo.png";
-import cn from "Utils/cn";
+import cn from "../Utils/cn";
 
 const Logo = ({ className = "", image = null }) => {
   return (

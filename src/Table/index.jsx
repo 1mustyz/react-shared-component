@@ -1,7 +1,7 @@
 import { CircularProgress } from "@mui/material";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
-import cn from "Utils/cn";
+import cn from "../Utils/cn";
 
 export const TableWrapper = ({ children, className }) => {
   return (

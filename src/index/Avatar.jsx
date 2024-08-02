@@ -1,5 +1,5 @@
-import avartarImage from "Assets/avatar.png";
-import cn from "Utils/cn";
+import avartarImage from "../Assets/avatar.png";
+import cn from "../Utils/cn";
 
 const Avatar = ({ image, className }) => {
   return (

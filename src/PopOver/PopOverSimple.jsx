@@ -1,5 +1,5 @@
 import { useState } from "react";
-import cn from "Utils/cn";
+import cn from "../Utils/cn";
 import { ClickAwayListener } from "@mui/base/ClickAwayListener";
 
 const PopOverSimple = ({ header, content, className }) => {

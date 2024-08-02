@@ -1,6 +1,6 @@
 import { CircularProgress } from "@mui/material";
 
-import cn from "Utils/cn";
+import cn from "../Utils/cn";
 
 export const MobileTableWrapper = ({ children, className }) => {
   return (

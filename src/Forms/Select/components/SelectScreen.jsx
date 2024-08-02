@@ -2,8 +2,9 @@ import { AiOutlineCaretDown } from "react-icons/ai";
 import { CircularProgress } from "@mui/material";
 import { IoIosClose } from "react-icons/io";
 
-import cn from "Utils/cn";
-import trimText from "Utils/trimText";
+import cn from "../../../Utils/cn";
+
+import trimText from "../../../Utils/trimText";
 
 const SelectScreen = ({
   className,
@@ -24,14 +25,14 @@ const SelectScreen = ({
       className={cn(
         "border-1 border-main flex justify-between cursor-pointer items-center py-[9px] px-[10px]",
         className,
-        disabled && "opacity-80 cursor-not-allowed"
+        disabled && "opacity-80 cursor-not-allowed",
       )}
     >
       <p
         className={cn(
           "text-grey-600 cursor-pointer text-[14px] sm:text-[12px] w-[80%]",
           dropdownTitleClass,
-          disabled && "cursor-not-allowed"
+          disabled && "cursor-not-allowed",
         )}
       >
         {!Array.isArray(value) ? (

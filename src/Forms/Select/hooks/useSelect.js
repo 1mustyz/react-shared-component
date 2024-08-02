@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-import useWindowScreen from "Utils/useWindowScreen";
+import useWindowScreen from "../../../Utils/useWindowScreen";
 
 const useSelect = (onChangeOption, value, selectMultiple, disabled) => {
   const parentContainerRef = useRef(null);

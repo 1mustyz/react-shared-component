@@ -1,7 +1,7 @@
 import { IoIosCheckmark } from "react-icons/io";
 import * as Popover from "@radix-ui/react-popover";
 
-import cn from "Utils/cn";
+import cn from "../../../Utils/cn";
 
 const DesktopSelect = ({
   optionClass = "",
@@ -27,7 +27,7 @@ const DesktopSelect = ({
           <Popover.Content
             className={cn(
               "shadow-select sm:hidden max-h-[300px] overflow-y-auto bg-white mt-1",
-              optionClass
+              optionClass,
             )}
             style={{ width: `${parentWidth}px` }}
           >
@@ -46,7 +46,7 @@ const DesktopSelect = ({
                     selected.length > 0 &&
                     selected?.find((x) => x?.value === item?.value) &&
                     "bg-5A5"
-                  }`
+                  }`,
                 )}
               >
                 <p className={`text-[14px] ${labelClass}`}>

@@ -1,7 +1,7 @@
 import { IoIosCheckmark } from "react-icons/io";
 
 import CustomModal from "../../CustomModal";
-import cn from "Utils/cn";
+import cn from "../../../Utils/cn";
 
 const MobileSelect = ({
   smallLabelClassName = "",
@@ -34,7 +34,7 @@ const MobileSelect = ({
                 selectMultiple &&
                 selected.find((x) => x.value === item.value) &&
                 "bg-5A5"
-              }`
+              }`,
             )}
           >
             <p className={`text-[20px]`}>

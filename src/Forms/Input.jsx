@@ -1,7 +1,7 @@
 import { CircularProgress } from "@mui/material";
 
 import { useField } from "formik";
-import cn from "Utils/cn";
+import cn from "../Utils/cn";
 
 const Input = ({
   className = "",
@@ -23,7 +23,7 @@ const Input = ({
       className={cn(
         "flex flex-col w-full text-[14px] font-thin",
         className,
-        disabled && "opacity-80"
+        disabled && "opacity-80",
       )}
     >
       {withTitle && (
@@ -38,7 +38,7 @@ const Input = ({
           className={cn(
             "border-1 font-thin focus:outline-none sm:text-[12px] disabled:opacity-80 disabled:cursor-not-allowed w-full px-3 py-[9px]",
             inputStyle,
-            meta.error && meta.touched ? "border-[red]" : "border-input"
+            meta.error && meta.touched ? "border-[red]" : "border-input",
           )}
           placeholder={placeholder}
           type={type}
@@ -77,7 +77,7 @@ export const InputNoFormik = ({
       className={cn(
         "flex flex-col w-full text-[14px]",
         disabled && " opacity-80",
-        className
+        className,
       )}
     >
       {withTitle && (
@@ -90,12 +90,12 @@ export const InputNoFormik = ({
         className={cn(
           "border-1 focus:outline-none w-full border-input  sm:text-[12px] flex justify-between items-center px-3",
           `${error && touched && "border-[red]"}`,
-          inputStyle
+          inputStyle,
         )}
       >
         <input
           className={cn(
-            "focus:outline-none w-full  disabled:opacity-80 disabled:cursor-not-allowed  py-[9px]"
+            "focus:outline-none w-full  disabled:opacity-80 disabled:cursor-not-allowed  py-[9px]",
           )}
           name={name}
           placeholder={placeholder}

@@ -4,7 +4,7 @@ import DesktopSelect from "./components/DesktopSelect";
 import MobileSelect from "./components/MobileSelect";
 import SelectScreen from "./components/SelectScreen";
 import useSelect from "./hooks/useSelect";
-import cn from "Utils/cn";
+import cn from "../../Utils/cn";
 
 const Select = ({
   data,

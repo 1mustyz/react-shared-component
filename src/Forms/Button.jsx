@@ -1,5 +1,5 @@
 import { CircularProgress } from "@mui/material";
-import cn from "Utils/cn";
+import cn from "../Utils/cn";
 import { cva } from "class-variance-authority";
 
 const buttonVariants = cva(
@@ -15,7 +15,7 @@ const buttonVariants = cva(
     defaultVariants: {
       variant: "default",
     },
-  }
+  },
 );
 
 const Button = ({
@@ -34,7 +34,7 @@ const Button = ({
       onClick={handleSubmit}
       className={cn(
         buttonVariants({ variant, className }),
-        `${(isLoading || disabled) && "bg-opacity-[0.7]"}`
+        `${(isLoading || disabled) && "bg-opacity-[0.7]"}`,
       )}
     >
       {Icon && Icon}

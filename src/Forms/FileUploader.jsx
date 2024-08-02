@@ -4,9 +4,9 @@ import { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import { CircularProgress } from "@mui/material";
-import cn from "Utils/cn";
-import { IMAGE_SIZE, filesAllowed } from "Utils/constants";
-import readableFileSize from "Utils/readableFileSize";
+import cn from "../Utils/cn";
+import { IMAGE_SIZE, filesAllowed } from "../Utils/constants";
+import readableFileSize from "../Utils/readableFileSize";
 
 const FileUploader = ({
   onFileUpload,
@@ -24,7 +24,7 @@ const FileUploader = ({
       setSelected(acceptedFiles[0]);
       onFileUpload(acceptedFiles);
     },
-    [onFileUpload]
+    [onFileUpload],
   );
 
   const { getRootProps, getInputProps } = useDropzone({
@@ -37,7 +37,7 @@ const FileUploader = ({
       {...getRootProps()}
       className={cn(
         " border-dashed border-2 p-4 text-center h-[200px] sm:h-[150px] flex flex-col justify-center items-center",
-        `${disabled && "cursor-default opacity-40"}`
+        `${disabled && "cursor-default opacity-40"}`,
       )}
     >
       {!isLoading ? (
