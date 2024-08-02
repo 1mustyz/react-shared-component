@@ -1,5 +1,5 @@
-import CustomModal from "Forms/CustomModal";
-import Button from "Forms/Button";
+import CustomModal from "../Forms/CustomModal";
+import Button from "../Forms/Button";
 import PropTypes from "prop-types";
 
 const ConfirmBox = ({
