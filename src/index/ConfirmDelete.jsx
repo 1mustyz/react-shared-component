@@ -1,7 +1,7 @@
 import { useState } from "react";
-import CustomModal from "./Forms/CustomModal";
-import { InputNoFormik } from "./Forms/Input";
-import Button from "./Forms/Button";
+import CustomModal from "Forms/CustomModal";
+import { InputNoFormik } from "Forms/Input";
+import Button from "Forms/Button";
 import PropTypes from "prop-types";
 
 const ConfirmDelete = ({

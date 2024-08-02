@@ -1,4 +1,4 @@
-import cn from "../Utils/cn";
+import cn from "Utils/cn";
 import { CiSearch } from "react-icons/ci";
 
 const CustomSearch = ({
